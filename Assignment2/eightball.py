@@ -6,6 +6,7 @@ answer from a set of predetermined answers.
 
 import random
 
+
 def main():
     question = input("Ask a yes or no question: ")
     while question != '':
@@ -21,6 +22,7 @@ def main():
         if i == 5:
             print("Concentrate and ask again.")
         question = input("Ask a yes or no question: ")
+
 
 if __name__ == '__main__':
     main()
