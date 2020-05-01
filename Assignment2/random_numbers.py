@@ -7,9 +7,9 @@ range from MIN_RANDOM to MAX_RANDOM, inclusive
 
 import random
 
-NUM_RANDOM = 10
-MIN_RANDOM = 0
-MAX_RANDOM = 100
+NUM_RANDOM = 10     # number of random numbers generated
+MIN_RANDOM = 0      # minimum range for random numbers
+MAX_RANDOM = 100    # maximum range for random numbers
 
 def main():
     """

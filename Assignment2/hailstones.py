@@ -1,17 +1,16 @@
 """
 File: hailstones.py
 -------------------
-This is a file for the optional Hailstones problem, if
-you'd like to try solving it.
+This is a program exploring the famous 'Hailstone Sequence'
+created by Douglas Hofstadter in his book 'Gödel, Escher, Bach.'
 """
 
 
 def main():
     """
-    You should write your code for this program in this function.
-    Make sure to delete the 'pass' line before starting to write
-    your own code. You should also delete this comment and replace
-    it with a better, more descriptive one.
+    This program reads a number chosen by the user, displays the hailstone
+    sequence for that number, as well as displaying the number of steps
+    that were necessary to eventually get that number to 1.
     """
     # start at 0 steps taken, keeping a counter
     steps = 0
