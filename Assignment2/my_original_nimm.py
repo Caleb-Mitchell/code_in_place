@@ -24,7 +24,7 @@ def main():
         # ask the user if they would like to remove 1 or 2 stones
         print("There are " + str(num_stones) + " stones left")
         remove_stones = input("Player " + str(turn) + " would you like to remove 1 or 2 stones? ")
-        # print("")
+        print("")
         # validate that the user typed '1' or '2', and remove that many stones from the total
         if remove_stones == '1' or remove_stones == '2':
             remove_stones = int(remove_stones)
@@ -37,10 +37,8 @@ def main():
         else:
             # if the user doesn't type '1' or '2', ask them again to type '1' or '2'
             while remove_stones != '1' or remove_stones != '2':
-                remove_stones = input("Player " + str(turn) + " would you like to remove 1 or 2 stones? "
-                                                              "Please enter 1 or 2: ")
-                # remove_stones = input(print('', end=''))
-                # print("")
+                remove_stones = input("Please enter 1 or 2: ")
+                print("")
                 if remove_stones == '1' or remove_stones == '2':
                     remove_stones = int(remove_stones)
                     num_stones -= remove_stones
@@ -58,4 +56,3 @@ def main():
 # to call the main() function.
 if __name__ == '__main__':
     main()
-
