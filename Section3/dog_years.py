@@ -11,12 +11,13 @@ def main():
     """
 
     """
-    convert_dog_years(humanyears)
-    print(dog_years)
+    human_age = int(input("Enter an age in human years: "))
+    dog_age = convert_dog_years(human_age)
+    print("The age in dog years is , ", dog_age)
 
-def convert_dog_years():
-    human_age = input("Enter an age in human years: ")
+def convert_dog_years(human_age):
     return human_age * DOG_AGE_CONVERSION
+
 
 # This provided line is required at the end of a Python file
 # to call the main() function.
