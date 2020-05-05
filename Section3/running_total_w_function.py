@@ -8,19 +8,17 @@ dog age using the fact that there are seven dog years per human year.
 
 def main():
     num = int(input("Enter a value: "))
-    print("Running total is", num)
-    print("")
-    total = num
+    running_total = num
     while num != 0:
-        total = running_total(total)
-        print("Running total is", total)
+        print("Running total is", running_total)
         print("")
+        num = int(input("Enter a value: "))
+        running_total = update_running_total(num, running_total)
 
 
-def running_total(total):
-    num = int(input("Enter a value: "))
-    total += num
-    return total
+def update_running_total(num, running_total):
+    running_total += num
+    return running_total
 
 
 if __name__ == '__main__':
