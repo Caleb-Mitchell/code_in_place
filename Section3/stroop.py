@@ -1,4 +1,7 @@
 
+# windows only
+# from colorama import init
+# init(autoreset=True)
 
 import time
 import random
