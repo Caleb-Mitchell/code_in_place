@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="47990e99-3ad1-4186-bf21-f5945f7fb5ba" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="47990e99-3ad1-4186-bf21-f5945f7fb5ba" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,7 +27,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Section3" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager" selected="Python.scratch">
@@ -135,12 +133,27 @@
       <option name="project" value="LOCAL" />
       <updated>1588703273318</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added T430 and fixed test program">
+      <created>1588704702044</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1588704702044</updated>
+    </task>
+    <task id="LOCAL-00003" summary="added T430 and fixed test program">
+      <created>1588704778062</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1588704778062</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="adding image?" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding image?" />
+    <MESSAGE value="added T430 and fixed test program" />
+    <option name="LAST_COMMIT_MESSAGE" value="added T430 and fixed test program" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1021" y="185" key="#Doctest_get_pixel_dist" timestamp="1587369802485">
@@ -155,29 +168,33 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="419" y="165" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.768@0.0.1366.768" timestamp="1588703504511" />
-    <state x="466" y="0" key="CommitChangelistDialog2" timestamp="1588703273242">
+    <state x="466" y="0" key="CommitChangelistDialog2" timestamp="1588704777989">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="466" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1588703273242" />
-    <state width="1327" height="175" key="GridCell.Tab.0.bottom" timestamp="1588704488360">
+    <state x="466" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1588704777989" />
+    <state x="469" y="175" key="FileChooserDialogImpl" timestamp="1588706708612">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1327" height="175" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1588704488360" />
+    <state x="469" y="175" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1588706708612" />
+    <state width="1327" height="175" key="GridCell.Tab.0.bottom" timestamp="1588706709705">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1327" height="175" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1588706709705" />
     <state width="1094" height="197" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1280.689@0.0.1920.1050" timestamp="1587886686434" />
-    <state width="1327" height="175" key="GridCell.Tab.0.center" timestamp="1588704488359">
+    <state width="1327" height="175" key="GridCell.Tab.0.center" timestamp="1588706709705">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1327" height="175" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1588704488359" />
+    <state width="1327" height="175" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1588706709705" />
     <state width="1094" height="197" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1280.689@0.0.1920.1050" timestamp="1587886686434" />
-    <state width="1327" height="175" key="GridCell.Tab.0.left" timestamp="1588704488359">
+    <state width="1327" height="175" key="GridCell.Tab.0.left" timestamp="1588706709704">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1327" height="175" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1588704488359" />
+    <state width="1327" height="175" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1588706709704" />
     <state width="1094" height="197" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1280.689@0.0.1920.1050" timestamp="1587886686434" />
-    <state width="1327" height="175" key="GridCell.Tab.0.right" timestamp="1588704488360">
+    <state width="1327" height="175" key="GridCell.Tab.0.right" timestamp="1588706709705">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1327" height="175" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1588704488360" />
+    <state width="1327" height="175" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1588706709705" />
     <state width="1094" height="197" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1280.689@0.0.1920.1050" timestamp="1587886686434" />
     <state x="354" y="68" key="SettingsEditor" timestamp="1588704195021">
       <screen x="0" y="0" width="1366" height="768" />
@@ -185,6 +202,10 @@
     <state x="354" y="68" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1588704195020" />
     <state x="798" y="209" key="SettingsEditor/0.0.1920.1050/1920.0.1280.689@0.0.1920.1050" timestamp="1587369820211" />
     <state x="798" y="257" key="SettingsEditor/0.23.1920.1177@0.23.1920.1177" timestamp="1588138677184" />
+    <state x="281" y="153" key="Vcs.Push.Dialog.v2" timestamp="1588704779715">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="281" y="153" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1588704779715" />
     <state x="973" y="370" width="672" height="761" key="search.everywhere.popup" timestamp="1588138405475">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>

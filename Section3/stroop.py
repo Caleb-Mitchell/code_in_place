@@ -7,9 +7,11 @@ from termcolor import colored
 
 PHASE_TIME_S = 10
 
+
 def main():
-    # print_intro()
-    # print("")
+    print_intro()
+    print("")
+    print("-" * 80)
     is_phase_1 = True  # color printed will be same as font-color
     is_phase_2 = False
     # is_phase_1 = True
