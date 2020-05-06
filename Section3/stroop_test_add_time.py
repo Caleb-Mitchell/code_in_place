@@ -1,5 +1,6 @@
 
 
+
 import time
 import random
 
@@ -14,12 +15,13 @@ def main():
     print("-" * 80)
     is_phase_1 = True  # color printed will be same as font-color
     is_phase_2 = False
+    run_phase(is_phase_1)
     # is_phase_1 = True
-    test_result = single_run_test(is_phase_1)
-    if test_result is True:
-        print("it worked!")
-    if test_result is False:
-        print("it worked, but wrong answer!")
+    # test_result = single_run_test(is_phase_1)
+    # if test_result is True:
+    #     print("it worked!")
+    # if test_result is False:
+    #     print("it worked, but wrong answer!")
     test_result = single_run_test(is_phase_2)
     if test_result is True:
         print("it worked!")
@@ -30,10 +32,22 @@ def main():
 def run_phase(is_phase_1):
     # set time1 as a large number of seconds, need to find 10 seconds later (
     if is_phase_1 is True:
-        time1 = time.time()
+        time1 = int(time.time())
         time2 = 0
-        while time2 - time1 != 10():
-            time2 = time.time()
+        answers_correct = 0
+        while int(time2 - time1) <= 10:
+            time2 = int(time.time())
+            test_result = single_run_test(is_phase_1)
+            time2 = int(time.time())
+            if test_result is True:
+                print("it worked!")
+                answers_correct += 1
+            if test_result is False:
+                print("it worked, but wrong answer!")
+            if int(time2 - time1) >= 10:
+                break
+        print("You got " + str(answers_correct) + " questions correct in 10 seconds.")
+
 
 
 
@@ -100,3 +114,4 @@ def print_in_color(text, font_color):
 
 if __name__ == '__main__':
     main()
+
