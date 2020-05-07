@@ -16,7 +16,6 @@ value.
 from simpleimage import SimpleImage
 
 DEFAULT_FILE = 'images/greenland-fire.png'
-INTENSITY_THRESHOLD = 1.6
 
 def find_flames(filename):
     """
