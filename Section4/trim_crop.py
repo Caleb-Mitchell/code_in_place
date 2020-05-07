@@ -24,7 +24,6 @@ def trim_crop_image(filename, trim_size):
     height = image.height
 
     cropped_image = SimpleImage.blank(width - (trim_size * 2), height - (trim_size * 2))
-    # cropped_image = SimpleImage.blank(width, height)
 
     for y in range(height):
         if trim_size < y < (height - trim_size):
