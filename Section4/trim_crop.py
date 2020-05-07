@@ -25,12 +25,10 @@ def trim_crop_image(filename, trim_size):
 
     cropped_image = SimpleImage.blank(width - (trim_size * 2), height - (trim_size * 2))
 
-    for y in range(height):
-        if trim_size < y < (height - trim_size):
-            for x in range(width):
-                if trim_size < x < (width - trim_size):
-                    pixel = image.get_pixel(x, y)
-                    cropped_image.set_pixel((x - trim_size), (y - trim_size), pixel)
+    for y in range(trim_size, (height - trim_size)):
+        for x in range(trim_size, (width - trim_size)):
+            pixel = image.get_pixel(x, y)
+            cropped_image.set_pixel((x - trim_size), (y - trim_size), pixel)
     return cropped_image
 
 
