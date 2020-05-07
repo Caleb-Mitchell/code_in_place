@@ -13,8 +13,7 @@ def main():
     original_karel.show()
 
     # Show karel with the image cropped
-    trim_size = TRIM_SIZE
-    cropped_karel = trim_crop_image(filename, trim_size)
+    cropped_karel = trim_crop_image(filename, TRIM_SIZE)
     cropped_karel.show()
 
 
