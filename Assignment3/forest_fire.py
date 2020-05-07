@@ -16,6 +16,7 @@ value.
 from simpleimage import SimpleImage
 
 DEFAULT_FILE = 'images/greenland-fire.png'
+INTENSITY_THRESHOLD = 1.6
 
 def find_flames(filename):
     """
@@ -24,7 +25,19 @@ def find_flames(filename):
     in order to highlight areas of wildfires.
     """
     image = SimpleImage(filename)
-    # TODO: your code here
+    for pixel in image:
+        average = (pixel.red + pixel.green + pixel.blue) // 3
+        # see if this pixel is "sufficiently" red
+        if pixel.red >= average:
+            # if so, overwrite pixel in original image with corresponding
+            # pixel from the back image.
+            pixel.red = 255
+            pixel.green = 0
+            pixel.blue = 0
+        else:
+            pixel.red = average
+            pixel.green = average
+            pixel.blue = average
     return image
 
 def main():
