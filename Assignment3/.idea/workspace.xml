@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="47990e99-3ad1-4186-bf21-f5945f7fb5ba" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forest_fire.py" beforeDir="false" afterPath="$PROJECT_DIR$/forest_fire.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reflection.py" beforeDir="false" afterPath="$PROJECT_DIR$/reflection.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,14 +157,22 @@
       <option name="project" value="LOCAL" />
       <updated>1588817070935</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="forest fire is done">
+      <created>1588818422159</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1588818422159</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="adding image?" />
     <MESSAGE value="added T430 and fixed test program" />
     <MESSAGE value="codeinplace_filter is done" />
-    <option name="LAST_COMMIT_MESSAGE" value="codeinplace_filter is done" />
+    <MESSAGE value="forest fire is done" />
+    <option name="LAST_COMMIT_MESSAGE" value="forest fire is done" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1021" y="185" key="#Doctest_get_pixel_dist" timestamp="1587369802485">
@@ -179,10 +187,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="419" y="165" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.768@0.0.1366.768" timestamp="1588703504511" />
-    <state x="466" y="0" key="CommitChangelistDialog2" timestamp="1588817070876">
+    <state x="466" y="0" key="CommitChangelistDialog2" timestamp="1588818422104">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="466" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1588817070876" />
+    <state x="466" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1588818422104" />
     <state x="527" y="188" key="FileChooserDialogImpl" timestamp="1588718911117">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -214,10 +222,10 @@
     <state x="354" y="68" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1588704195020" />
     <state x="798" y="209" key="SettingsEditor/0.0.1920.1050/1920.0.1280.689@0.0.1920.1050" timestamp="1587369820211" />
     <state x="798" y="257" key="SettingsEditor/0.23.1920.1177@0.23.1920.1177" timestamp="1588138677184" />
-    <state x="281" y="153" key="Vcs.Push.Dialog.v2" timestamp="1588817072148">
+    <state x="281" y="153" key="Vcs.Push.Dialog.v2" timestamp="1588818445638">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="281" y="153" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1588817072148" />
+    <state x="281" y="153" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1588818445638" />
     <state x="973" y="370" width="672" height="761" key="search.everywhere.popup" timestamp="1588138405475">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
