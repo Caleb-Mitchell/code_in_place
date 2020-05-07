@@ -3,6 +3,7 @@
 # from colorama import init
 # init(autoreset=True)
 
+
 import time
 import random
 
@@ -16,29 +17,109 @@ def main():
     print("")
     print("-" * 80)
     is_phase_1 = True  # color printed will be same as font-color
-    is_phase_2 = False
+    run_phase(is_phase_1)
+    print("-" * 80)
+    is_phase_1 = False
+    run_phase(is_phase_1)
     # is_phase_1 = True
-    test_result = single_run_test(is_phase_1)
-    if test_result is True:
-        print("it worked!")
-    if test_result is False:
-        print("it worked, but wrong answer!")
-    test_result = single_run_test(is_phase_2)
-    if test_result is True:
-        print("it worked!")
-    if test_result is False:
-        print("it worked, but wrong answer!")
+    # test_result = single_run_test(is_phase_1)
+    # if test_result is True:
+    #     print("it worked!")
+    # if test_result is False:
+    #     print("it worked, but wrong answer!")
+
+    # test_result = single_run_test(is_phase_2)
+    # if test_result is True:
+    #     print("it worked!")
+    # if test_result is False:
+    #     print("it worked, but wrong answer!")
+    #
     # Your solution goes here!
 
+
 def run_phase(is_phase_1):
-    # set time1 as a large number of seconds, need to find 10 seconds later (
+    if is_phase_1 is True:
+        test_number = 1
+        start_test(test_number)
+    elif is_phase_1 is False:
+        test_number = 2
+        start_test(test_number)
+
+    # i should clean this up into bigger functions
     if is_phase_1 is True:
         time1 = time.time()
-        time2 = 0
-        while time2 - time1 != 10():
+        answers_correct = 0
+        while True:
             time2 = time.time()
+            if (time2 - time1) < PHASE_TIME_S:
+                time2 = time.time()
+                test_result = single_run_test(is_phase_1)
+                if test_result is True:
+                    print("it worked!")
+                    print("")
+                    answers_correct += 1
+                if test_result is False:
+                    print("it worked, but wrong answer!")
+                    print("")
+            if (time2 - time1) >= PHASE_TIME_S:
+                print("Time is up. You got " + str(answers_correct) + " questions correct in " +
+                      str(PHASE_TIME_S) + " seconds.")
+                print("")
+                print("Press enter to continue.")
+                acknowledge = input("")
+                while True:
+                    if acknowledge != '':
+                        print("Press enter to continue.")
+                        acknowledge = input("")
+                    elif acknowledge == '':
+                        print("")
+                        print("")
+                        print("")
+                        break
+                break
+    elif is_phase_1 is False:
+        time1 = time.time()
+        answers_correct = 0
+        while True:
+            time2 = time.time()
+            if (time2 - time1) < PHASE_TIME_S:
+                time2 = time.time()
+                test_result = single_run_test(is_phase_1)
+                if test_result is True:
+                    print("it worked!")
+                    print("")
+                    answers_correct += 1
+                if test_result is False:
+                    print("it worked, but wrong answer!")
+                    print("")
+            if (time2 - time1) >= PHASE_TIME_S:
+                print("Time is up. You got " + str(answers_correct) + " questions correct in " +
+                      str(PHASE_TIME_S) + " seconds.")
+                print("")
+                print("Press enter to continue.")
+                acknowledge = input("")
+                while True:
+                    if acknowledge != '':
+                        print("Press enter to continue.")
+                        acknowledge = input("")
+                    elif acknowledge == '':
+                        print("")
+                        print("")
+                        print("")
+                        break
+                break
 
 
+def start_test(test_number):
+    print("Test " + str(test_number) + " will last " + str(PHASE_TIME_S) + " seconds, hit enter to begin.")
+    print("-" * 80)
+    acknowledge = input("")
+    while True:
+        if acknowledge != '':
+            print("Press enter to continue.")
+            acknowledge = input("")
+        elif acknowledge == '':
+            break
 
 
 def single_run_test(is_phase_1):
@@ -68,8 +149,7 @@ def single_run_test(is_phase_1):
         return True
     else:
         return False
-    print("")
-    print("")
+
 
 
 def print_intro():
