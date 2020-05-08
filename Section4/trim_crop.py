@@ -3,6 +3,7 @@ from simpleimage import SimpleImage
 DEFAULT_FILE = 'images/karel.png'
 TRIM_SIZE = 30
 
+
 def main():
     # Get file and load image
     filename = get_file()
