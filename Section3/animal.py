@@ -1,6 +1,10 @@
 
 import random
 
+'''
+needs timer functionality to hit milestone 3,
+but i did that with stroop so i feel good!
+'''
 
 def main():
     is_phase_1 = True
