@@ -4,7 +4,6 @@
     <list default="true" id="47990e99-3ad1-4186-bf21-f5945f7fb5ba" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/warhol2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/warhol_filter.py" beforeDir="false" afterPath="$PROJECT_DIR$/warhol_filter.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588980822482</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="warhol works!">
+      <created>1588986210585</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1588986210585</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -197,7 +203,8 @@
     <MESSAGE value="reflection is done" />
     <MESSAGE value="no intensity threshold needed, removed" />
     <MESSAGE value="warhol almost kinda works" />
-    <option name="LAST_COMMIT_MESSAGE" value="warhol almost kinda works" />
+    <MESSAGE value="warhol works!" />
+    <option name="LAST_COMMIT_MESSAGE" value="warhol works!" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1021" y="185" key="#Doctest_get_pixel_dist" timestamp="1587369802485">
@@ -212,10 +219,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="419" y="165" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.768@0.0.1366.768" timestamp="1588703504511" />
-    <state x="466" y="0" key="CommitChangelistDialog2" timestamp="1588980822343">
+    <state x="466" y="0" key="CommitChangelistDialog2" timestamp="1588986210516">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="466" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1588980822343" />
+    <state x="466" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1588986210516" />
     <state x="469" y="175" key="FileChooserDialogImpl" timestamp="1588985847665">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -247,10 +254,10 @@
     <state x="354" y="68" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1588704195020" />
     <state x="798" y="209" key="SettingsEditor/0.0.1920.1050/1920.0.1280.689@0.0.1920.1050" timestamp="1587369820211" />
     <state x="798" y="257" key="SettingsEditor/0.23.1920.1177@0.23.1920.1177" timestamp="1588138677184" />
-    <state x="281" y="153" key="Vcs.Push.Dialog.v2" timestamp="1588980824353">
+    <state x="281" y="153" key="Vcs.Push.Dialog.v2" timestamp="1588986212392">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="281" y="153" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1588980824353" />
+    <state x="281" y="153" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1588986212392" />
     <state x="459" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588819348151">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

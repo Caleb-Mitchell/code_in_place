@@ -20,30 +20,30 @@ def main():
 
     for x_patches in range(N_COLS):
         for y_patches in range(N_ROWS):
-            if color == 0:
-                simba_pic = make_recolored_patch(1.5, 0, 1.5)
-                color += 1
-            elif color == 1:
-                simba_pic = make_recolored_patch(2, 2, 2)
-                color += 1
-            elif color == 2:
-                simba_pic = make_recolored_patch(0, 1.5, 1.5)
-                color += 1
-            elif color == 3:
-                simba_pic = make_recolored_patch(0, 0, 1.5)
-                color += 1
-            elif color == 4:
-                simba_pic = make_recolored_patch(1.5, 1.5, 0)
-                color += 1
-            elif color == 5:
-                simba_pic = make_recolored_patch(.5, .5, .5)
-                color += 1
+            simba_pic = color_patch(color, simba_pic)
+            color += 1
             for y in range(PATCH_SIZE):
                 for x in range(PATCH_SIZE):
                     pixel = simba_pic.get_pixel(x, y)
                     final_image.set_pixel((x + (PATCH_SIZE * x_patches)), (y + (PATCH_SIZE * y_patches)), pixel)
 
     final_image.show()
+
+
+def color_patch(color, simba_pic):
+    if color == 0:
+        simba_pic = make_recolored_patch(1.5, 0, 1.5)
+    elif color == 1:
+        simba_pic = make_recolored_patch(2, 2, 2)
+    elif color == 2:
+        simba_pic = make_recolored_patch(0, 1.5, 1.5)
+    elif color == 3:
+        simba_pic = make_recolored_patch(0, 0, 1.5)
+    elif color == 4:
+        simba_pic = make_recolored_patch(1.5, 1.5, 0)
+    elif color == 5:
+        simba_pic = make_recolored_patch(.5, .5, .5)
+    return simba_pic
 
 def make_recolored_patch(red_scale, green_scale, blue_scale):
     '''
