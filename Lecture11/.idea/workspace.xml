@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="47990e99-3ad1-4186-bf21-f5945f7fb5ba" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Assignment3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment3/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="47990e99-3ad1-4186-bf21-f5945f7fb5ba" name="Default Changelist" comment="adding lecture11" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -121,7 +119,19 @@
       <option name="presentableId" value="Default" />
       <updated>1562831641146</updated>
     </task>
+    <task id="LOCAL-00001" summary="adding lecture11">
+      <created>1589238280834</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1589238280834</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="adding lecture11" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding lecture11" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1021" y="185" key="#Doctest_get_pixel_dist" timestamp="1587369802485">
@@ -132,6 +142,10 @@
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
     <state x="560" y="278" key="#Inspections/0.23.1920.1177@0.23.1920.1177" timestamp="1588350920861" />
+    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1589238293999">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1589238293999" />
     <state x="469" y="175" key="FileChooserDialogImpl" timestamp="1589222498314">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
