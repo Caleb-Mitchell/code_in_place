@@ -60,15 +60,23 @@ def play_game(secret_word):
         letter_guess = input("Type a single letter here, then press enter: ")
         letter_guess = letter_guess.upper()
 
-        if (letter_guess in secret_word) and (letter_guess != display_word):
+        if letter_guess == '':
+            print("Please guess a letter.")
+        elif (letter_guess in secret_word) and (letter_guess not in display_word):
             current_guesses -= 1
             print("That guess is correct.")
             # add correct guess to display_word while preserving dashes
             display_word = add_letters(secret_word, display_word, letter_guess)
             display_word = ''.join(display_word)
+        elif (letter_guess in secret_word) and (letter_guess in display_word):
+            print("You have already guessed: " + str(letter_guess) + ", please guess a new letter.")
         else:
             current_guesses -= 1
             print("There are no " + str(letter_guess) + "'s in the word.")
+
+        if current_guesses == 0:
+            print("Sorry, you lost. The secret word was: " + str(secret_word))
+            break
 
         # end game and exit loop
         if display_word == secret_word:
