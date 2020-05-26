@@ -31,14 +31,24 @@ def get_word():
     select a word from a much larger list by reading a list of words
     from the file specified by the constant LEXICON_FILE.
     """
-    random.seed(1)
-    index = random.randrange(3)
-    if index == 0:
-        return 'HAPPY'
-    elif index == 1:
-        return 'PYTHON'
-    else:
-        return 'COMPUTER'
+    # random.seed(1)
+
+    word_list = []
+    for line in open(LEXICON_FILE):
+        line = line.strip()
+        word_list.append(line)
+
+    random_word = random.choice(word_list)
+    print(random_word)
+    return random_word
+
+    # index = random.randrange(3)
+    # if index == 0:
+    #     return 'HAPPY'
+    # elif index == 1:
+    #     return 'PYTHON'
+    # else:
+    #     return 'COMPUTER'
 
 
 def play_game(secret_word):
@@ -70,6 +80,8 @@ def play_game(secret_word):
             display_word = ''.join(display_word)
         elif (letter_guess in secret_word) and (letter_guess in display_word):
             print("You have already guessed: " + str(letter_guess) + ", please guess a new letter.")
+        elif len(letter_guess) > 1:
+            print("Guess should only be a single character.")
         else:
             current_guesses -= 1
             print("There are no " + str(letter_guess) + "'s in the word.")
