@@ -39,7 +39,7 @@ def get_word():
         word_list.append(line)
 
     random_word = random.choice(word_list)
-    print(random_word)
+    # print(random_word)
     return random_word
 
     # index = random.randrange(3)
@@ -73,7 +73,6 @@ def play_game(secret_word):
         if letter_guess == '':
             print("Please guess a letter.")
         elif (letter_guess in secret_word) and (letter_guess not in display_word):
-            current_guesses -= 1
             print("That guess is correct.")
             # add correct guess to display_word while preserving dashes
             display_word = add_letters(secret_word, display_word, letter_guess)
