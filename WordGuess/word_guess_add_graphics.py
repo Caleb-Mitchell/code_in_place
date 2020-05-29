@@ -114,7 +114,7 @@ def play_game(canvas, secret_word):
                 # canvas.quit()
                 canvas = make_canvas(CANVAS_WIDTH, CANVAS_HEIGHT, 'Hangman')
                 make_gallows(canvas)
-                current_guesses = INITIAL_GUESSES  # needs to be set before game loop
+                current_guesses = INITIAL_GUESSES
                 num_misses = 0
                 game = True
             else:
@@ -125,13 +125,13 @@ def play_game(canvas, secret_word):
             print("")
             print("Congratulations, the word is: " + str(secret_word), "\n")
             game = False
-            canvas.mainloop()
+            # canvas.mainloop()
             play_again = input("Press 'y' to play again, 'n' to quit.")
             if play_again == "y":
                 # canvas.quit()
                 canvas = make_canvas(CANVAS_WIDTH, CANVAS_HEIGHT, 'Hangman')
                 make_gallows(canvas)
-                current_guesses = INITIAL_GUESSES  # needs to be set before game loop
+                current_guesses = INITIAL_GUESSES
                 num_misses = 0
                 game = True
             else:
