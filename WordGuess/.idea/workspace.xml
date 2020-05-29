@@ -20,8 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d06e123a-1e13-47f9-906b-6434340fc2f6" name="Default Changelist" comment="quick fix">
-      <change afterPath="$PROJECT_DIR$/word_guess_add_graphics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lecture11/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lecture11/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lecture11/move_rect.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Lecture11/move_rect.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lecture12/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lecture12/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/word_guess_add_graphics.py" beforeDir="false" afterPath="$PROJECT_DIR$/word_guess_add_graphics.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,6 +182,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="started word_guess in word_guess_working.py" />

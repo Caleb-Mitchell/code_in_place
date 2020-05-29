@@ -4,22 +4,35 @@ File: word_guess.py
 Fill in this comment.
 """
 
-# maybe i could cut up an image of cloud and use that?
+# somehow destroy window on replay
+
+# on win, place him on ground
+# on loss, put huge X on the screen
+
+
 
 import random
+import tkinter
 
+CANVAS_WIDTH = 600  # Width of drawing canvas in pixels
+CANVAS_HEIGHT = 600  # Height of drawing canvas in pixels
 
-LEXICON_FILE = "Lexicon.txt"    # File to read word list from
-INITIAL_GUESSES = 8             # Initial number of guesses player starts with
+LEXICON_FILE = "Lexicon.txt"  # File to read word list from
+INITIAL_GUESSES = 8  # Initial number of guesses player starts with
 
 
 def main():
+    canvas = make_canvas(CANVAS_WIDTH, CANVAS_HEIGHT, 'Hangman')
+    make_gallows(canvas)
+    # canvas.create_line(500, 100, 500, 500, fill="red")
+    # canvas.mainloop()
+
     """
     To play the game, we first select the secret word for the
     player to guess and then play the game using that secret word.
     """
     secret_word = get_word()
-    play_game(secret_word)
+    play_game(canvas, secret_word)
 
 
 def get_word():
@@ -32,7 +45,7 @@ def get_word():
     select a word from a much larger list by reading a list of words
     from the file specified by the constant LEXICON_FILE.
     """
-    # random.seed(1)
+    random.seed(1)
 
     word_list = []
     for line in open(LEXICON_FILE):
@@ -52,20 +65,24 @@ def get_word():
     #     return 'COMPUTER'
 
 
-def play_game(secret_word):
+def play_game(canvas, secret_word):
     """
     Add your code (remember to delete the "pass" below)
     """
-    current_guesses = INITIAL_GUESSES           # needs to be set before game loop
 
-    unknown_word = hide_characters(secret_word)   # create hidden word changing letters to '-'
-    display_word = ''.join(unknown_word)          # create string to display from unknown word
+    current_guesses = INITIAL_GUESSES  # needs to be set before game loop
+    num_misses = 0
+    game = True
 
-    while True:
+    unknown_word = hide_characters(secret_word)  # create hidden word changing letters to '-'
+    display_word = ''.join(unknown_word)  # create string to display from unknown word
+
+    print("")
+    while game:
         print("The word now looks like this: " + str(display_word))
 
         # next display INITIAL_GUESSES
-        print("You have " + str(current_guesses) + " guesses left.")
+        print("You have " + str(current_guesses) + " guesses left.", "\n")
 
         # ask for input from user as a guess
         letter_guess = input("Type a single letter here, then press enter: ")
@@ -84,18 +101,82 @@ def play_game(secret_word):
             print("Guess should only be a single character.")
         else:
             current_guesses -= 1
-            print("There are no " + str(letter_guess) + "'s in the word.")
+            num_misses += 1
+            draw_body(canvas, num_misses)
+            print("There are no " + str(letter_guess) + "'s in the word.", "\n")
 
         if current_guesses == 0:
-            print("Sorry, you lost. The secret word was: " + str(secret_word))
-            break
+            print("Sorry, you lost. The secret word was: " + str(secret_word), "\n")
+            game = False
+            # canvas.mainloop()
+            play_again = input("Press 'y' to play again, 'n' to quit.")
+            if play_again == "y":
+                # canvas.quit()
+                canvas = make_canvas(CANVAS_WIDTH, CANVAS_HEIGHT, 'Hangman')
+                make_gallows(canvas)
+                current_guesses = INITIAL_GUESSES  # needs to be set before game loop
+                num_misses = 0
+                game = True
+            else:
+                break
 
         # end game and exit loop
         if display_word == secret_word:
             print("")
-            print("Congratulations, the word is: " + str(secret_word))
-            break
+            print("Congratulations, the word is: " + str(secret_word), "\n")
+            game = False
+            canvas.mainloop()
+            play_again = input("Press 'y' to play again, 'n' to quit.")
+            if play_again == "y":
+                # canvas.quit()
+                canvas = make_canvas(CANVAS_WIDTH, CANVAS_HEIGHT, 'Hangman')
+                make_gallows(canvas)
+                current_guesses = INITIAL_GUESSES  # needs to be set before game loop
+                num_misses = 0
+                game = True
+            else:
+                break
 
+
+def draw_body(canvas, num_misses):
+    # create head
+    if num_misses == 1:
+        canvas.create_oval(225, 150, 275, 200, outline="blue")
+    # create neck
+    if num_misses == 2:
+        canvas.create_line(250, 200, 250, 215, fill="blue")
+    # create body
+    if num_misses == 3:
+        canvas.create_rectangle(225, 215, 275, 350, outline="blue")
+    # create left arm
+    if num_misses == 4:
+        canvas.create_line(225, 225, 200, 210, fill="blue")
+    # create right arm
+    if num_misses == 5:
+        canvas.create_line(275, 225, 300, 210, fill="blue")
+    # create left leg
+    if num_misses == 6:
+        canvas.create_line(240, 350, 215, 375, fill="blue")
+    # create right leg
+    if num_misses == 7:
+        canvas.create_line(260, 350, 285, 375, fill="blue")
+    # create sad face
+    if num_misses == 8:
+        canvas.create_line(233, 165, 237, 165, fill="blue")
+        canvas.create_line(263, 165, 267, 165, fill="blue")
+        canvas.create_oval(245, 175, 255, 185, fill="blue")
+
+
+def make_gallows(canvas):
+    # gallows posts (right and bottom)
+    canvas.create_line(500, 100, 500, 500, fill="red")
+    canvas.create_line(100, 500, 500, 500, fill="red")
+    # gallows top post
+    canvas.create_line(250, 100, 500, 100, fill="red")
+    # gallows hanging post
+    canvas.create_line(250, 100, 250, 150, fill="red")
+
+    canvas.create_text(25, 560, anchor='w', font='Courier 52', text='H A N G M A N', fill="red")
 
 def add_letters(secret_word, display_word, letter_guess):
     new_string = []
@@ -117,6 +198,21 @@ def hide_characters(secret_word):
         else:
             hidden_word.append(letter)
     return hidden_word
+
+
+def make_canvas(width, height, title):
+    """
+    DO NOT MODIFY
+    Creates and returns a drawing canvas
+    of the given int size with a blue border,
+    ready for drawing.
+    """
+    top = tkinter.Tk()
+    top.minsize(width=width, height=height)
+    top.title(title)
+    canvas = tkinter.Canvas(top, width=width + 1, height=height + 1)
+    canvas.pack()
+    return canvas
 
 
 # This provided line is required at the end of a Python file
