@@ -56,14 +56,6 @@ def get_word():
     # print(random_word)
     return random_word
 
-    # index = random.randrange(3)
-    # if index == 0:
-    #     return 'HAPPY'
-    # elif index == 1:
-    #     return 'PYTHON'
-    # else:
-    #     return 'COMPUTER'
-
 
 def play_game(canvas, secret_word):
     """
@@ -90,6 +82,8 @@ def play_game(canvas, secret_word):
 
         if letter_guess == '':
             print("Please guess a letter.")
+        elif len(letter_guess) > 1:
+            print("Guess should only be a single character.")
         elif (letter_guess in secret_word) and (letter_guess not in display_word):
             print("That guess is correct.")
             # add correct guess to display_word while preserving dashes
@@ -97,8 +91,6 @@ def play_game(canvas, secret_word):
             display_word = ''.join(display_word)
         elif (letter_guess in secret_word) and (letter_guess in display_word):
             print("You have already guessed: " + str(letter_guess) + ", please guess a new letter.")
-        elif len(letter_guess) > 1:
-            print("Guess should only be a single character.")
         else:
             current_guesses -= 1
             num_misses += 1
@@ -108,32 +100,33 @@ def play_game(canvas, secret_word):
         if current_guesses == 0:
             print("Sorry, you lost. The secret word was: " + str(secret_word), "\n")
             game = False
-            # canvas.mainloop()
             play_again = input("Press 'y' to play again, 'n' to quit.")
             if play_again == "y":
-                # canvas.quit()
                 canvas = make_canvas(CANVAS_WIDTH, CANVAS_HEIGHT, 'Hangman')
                 make_gallows(canvas)
                 current_guesses = INITIAL_GUESSES
                 num_misses = 0
                 game = True
+                secret_word = get_word()
+                unknown_word = hide_characters(secret_word)  # create hidden word changing letters to '-'
+                display_word = ''.join(unknown_word)  # create string to display from unknown word
             else:
                 break
 
-        # end game and exit loop
         if display_word == secret_word:
             print("")
             print("Congratulations, the word is: " + str(secret_word), "\n")
             game = False
-            # canvas.mainloop()
             play_again = input("Press 'y' to play again, 'n' to quit.")
             if play_again == "y":
-                # canvas.quit()
                 canvas = make_canvas(CANVAS_WIDTH, CANVAS_HEIGHT, 'Hangman')
                 make_gallows(canvas)
                 current_guesses = INITIAL_GUESSES
                 num_misses = 0
                 game = True
+                secret_word = get_word()
+                unknown_word = hide_characters(secret_word)  # create hidden word changing letters to '-'
+                display_word = ''.join(unknown_word)  # create string to display from unknown word
             else:
                 break
 
@@ -177,6 +170,7 @@ def make_gallows(canvas):
     canvas.create_line(250, 100, 250, 150, fill="red")
 
     canvas.create_text(25, 560, anchor='w', font='Courier 52', text='H A N G M A N', fill="red")
+
 
 def add_letters(secret_word, display_word, letter_guess):
     new_string = []
