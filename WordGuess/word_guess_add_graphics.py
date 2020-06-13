@@ -10,7 +10,6 @@ Fill in this comment.
 # on loss, put huge X on the screen
 
 
-
 import random
 import tkinter
 
@@ -45,7 +44,7 @@ def get_word():
     select a word from a much larger list by reading a list of words
     from the file specified by the constant LEXICON_FILE.
     """
-    random.seed(1)
+    # random.seed(1)
 
     word_list = []
     for line in open(LEXICON_FILE):

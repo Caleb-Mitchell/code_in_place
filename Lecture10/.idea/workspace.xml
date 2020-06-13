@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="47990e99-3ad1-4186-bf21-f5945f7fb5ba" name="Default Changelist" comment="" />
+    <list default="true" id="47990e99-3ad1-4186-bf21-f5945f7fb5ba" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WordGuess/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WordGuess/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WordGuess/word_guess_add_graphics.py" beforeDir="false" afterPath="$PROJECT_DIR$/../WordGuess/word_guess_add_graphics.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,13 +18,13 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../personal_python" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager" selected="Python tests.Doctest get_best_pixel">
@@ -104,6 +108,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1021" y="185" key="#Doctest_get_pixel_dist/0.0.1920.1050/1920.0.1280.689@0.0.1920.1050" timestamp="1587369802485" />
+    <state x="469" y="175" key="FileChooserDialogImpl" timestamp="1591568985119">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="469" y="175" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1591568985119" />
     <state width="1094" height="197" key="GridCell.Tab.0.bottom" timestamp="1587886686434">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
