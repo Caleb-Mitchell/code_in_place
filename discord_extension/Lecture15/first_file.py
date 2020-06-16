@@ -6,7 +6,10 @@ and print them to the screen
 FILE_NAME = 'holdup.txt'
 
 def main():
-	pass
+	with open(FILE_NAME) as f:
+		for line in f:
+			line = line.strip()
+			print(line)
 
 if __name__ == '__main__':
 	main()

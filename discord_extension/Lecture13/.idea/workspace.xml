@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="31c8ab30-b85c-4d14-a6a3-20fdb671e717" name="Default Changelist" comment="" />
+    <list default="true" id="31c8ab30-b85c-4d14-a6a3-20fdb671e717" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Lecture15/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lecture15/.idea/Lecture15.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lecture15/.idea/Lecture15.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lecture15/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lecture15/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lecture15/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lecture15/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,15 +19,19 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="ProjectId" id="1aT89vkB2vQnv8ysZEBXkjdsADj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lecture15" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -170,9 +179,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="497" y="99" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050/1920.0.1280.689@0.0.1920.1050" timestamp="1587547415354" />
-    <state x="823" y="199" key="FileChooserDialogImpl" timestamp="1586922711652">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state x="586" y="146" key="FileChooserDialogImpl" timestamp="1592068670961">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
+    <state x="586" y="146" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1592068670961" />
     <state x="823" y="199" key="FileChooserDialogImpl/0.0.1920.1050/1920.0.1280.689@0.0.1920.1050" timestamp="1586922711652" />
     <state width="1083" height="210" key="GridCell.Tab.0.bottom" timestamp="1588886508689">
       <screen x="0" y="0" width="1920" height="1050" />
