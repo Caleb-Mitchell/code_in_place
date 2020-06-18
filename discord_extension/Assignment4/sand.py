@@ -84,9 +84,14 @@ def check_move(grid, x1, y1, x2, y2):
         return False
     if ((x2 == x1 - 1) and (y2 == y1)) and (grid[y2][x2] != None):  # check left move
         return False
+    # check corner rule, down-right and down-left
     if ((x2 == x1 + 1) and (y2 == y1 + 1)) and (grid[y2][x2] == None) and (grid[y2 - 1][x2] != None):
         return False
+    if ((x2 == x1 + 1) and (y2 == y1 + 1)) and (grid[y2][x2] != None):      # testing
+        return False
     if ((x2 == x1 - 1) and (y2 == y1 + 1)) and (grid[y2][x2] == None) and (grid[y2 - 1][x2] != None):
+        return False
+    if ((x2 == x1 - 1) and (y2 == y1 + 1)) and (grid[y2][x2] != None):      # testing
         return False
     else:
         return True
@@ -111,7 +116,7 @@ def do_gravity(grid, x, y):
     >>>
     >>> # bottom blocked
     >>> grid = [[None, 's', None], ['r', 'r', 'r']]
-    >>> do_gravity(grid, 1, 0)
+    >>> do_gravity(grid, 1, 0)                              # needs fix
     [[None, 's', None], ['r', 'r', 'r']]
     >>>
     >>> # rock-below down-left
@@ -121,7 +126,7 @@ def do_gravity(grid, x, y):
     >>>
     >>> # sand-below down-right
     >>> grid = [[None, 's', None], ['s', 's', None]]
-    >>> do_gravity(grid, 1, 0)
+    >>> do_gravity(grid, 1, 0)                              # needs fix
     [[None, None, None], ['s', 's', 's']]
     >>>
     >>> # sand corner: down-right
@@ -134,7 +139,27 @@ def do_gravity(grid, x, y):
     >>> do_gravity(grid, 1, 1)
     [[None, None, None], [None, 's', None]]
     """
-    pass
+    # check for sand at x, y
+    if grid[y][x] == 's':
+        # if sand present, check move down
+        if check_move(grid, x, y, x, (y + 1)):
+            # if move possible, move sand down
+            do_move(grid, x, y, x, (y + 1))
+            return grid
+
+        # check move down-left, if clear move
+        elif check_move(grid, x, y, (x - 1), (y + 1)):
+            do_move(grid, x, y, (x - 1), (y + 1))
+            return grid
+
+        # check move down-right, if clear move
+        elif check_move(grid, x, y, (x + 1), (y + 1)):
+            do_move(grid, x, y, (x + 1), (y + 1))
+            return grid
+        else:
+            return grid
+    else:
+        return grid
 
 
 def do_brownian(grid, x, y, brownian):
@@ -142,7 +167,27 @@ def do_brownian(grid, x, y, brownian):
     Given grid, x,y, and brownian int 0..100.
     Do the random brownian move for that x,y.
     """
-    pass
+    # check for sand at coordinate
+    if grid[y][x] == 's':
+        random_num = random.randrange(100)
+        if random_num < brownian:
+            coin = random.randrange(2)
+            if coin == 0:
+                # try to move left
+                if check_move(grid, x, y, (x - 1), y):
+                    do_move(grid, x, y, (x - 1), y)
+                    return grid
+                else:
+                    return grid
+            else:
+                # try to move right
+                if check_move(grid, x, y, (x + 1), y):
+                    do_move(grid, x, y, (x + 1), y)
+                    return grid
+        else:
+            return grid
+    else:
+        return grid
 
 
 def do_whole_grid(grid, brownian):
@@ -156,7 +201,11 @@ def do_whole_grid(grid, brownian):
     >>> do_whole_grid(grid, 0)
     [[None, None, None], [None, 's', None], [None, None, 's']]
     """
-    pass
+    for y in reversed(range(len(grid))):
+        for x in (range(len(grid[0]))):
+            do_gravity(grid, x, y)
+            do_brownian(grid, x, y, brownian)
+    return grid
 
 
 ################################################
