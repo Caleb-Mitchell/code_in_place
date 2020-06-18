@@ -109,6 +109,7 @@ def play_game(canvas, secret_word):
                 secret_word = get_word()
                 unknown_word = hide_characters(secret_word)  # create hidden word changing letters to '-'
                 display_word = ''.join(unknown_word)  # create string to display from unknown word
+                print("")
             else:
                 break
 
@@ -126,6 +127,7 @@ def play_game(canvas, secret_word):
                 secret_word = get_word()
                 unknown_word = hide_characters(secret_word)  # create hidden word changing letters to '-'
                 display_word = ''.join(unknown_word)  # create string to display from unknown word
+                print("")
             else:
                 break
 

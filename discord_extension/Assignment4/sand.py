@@ -78,91 +78,18 @@ def check_move(grid, x1, y1, x2, y2):
     if len(grid[0]) <= abs(x2):
         return False
 
-    # tests empty
-    if grid[y2][x2] != None:
+    if ((x2 == x1) and (y2 == y1 + 1)) and (grid[y2][x2] != None):  # check down move
         return False
-
-    # corner
-    # down left
-
-    if grid[y2][x2] != None:
-        if grid[y2][x2] == grid[y1+1][x1+1]:
-            if grid[y2-1][x2] != None:
-                return False
-
-    # down right
-
-    if grid[y2][x2] != None:
-        if grid[y2][x2] == grid[y1+1][x1-1]:
-            if grid[y2-1][x2] != None:
-                return False
-    # above the corner
-
-
-
-    # if grid[y2][x2] == None:                        # if the (corner) destination has none
-    #     if grid[y2][x2] == grid[y2-1][x2-1]:        # if it is a diagonal move
-    #         if grid[y2-1][x2] != None:              # if the square above has something
-    #             return False
-        # if grid[y2][x2] == grid[y2-1][x2+1]:
-        #     if grid[y2-1][x2] != None:
-        #         return False
-    # tests corner rule
-    # if grid[y2-1][x2] != None:
-    #     # if grid[y2][x2-1] != None:
-    #     #     return False
-    #     if grid[y2][x2+1] != None:
-    #         return False
-    # if ((grid[y2-1][x2]) != None) and (grid[y2-1][x2+1] != None or grid[y2-1][x2-1] != None):
-    #     return False
-
-
-    # how do i know if elemtents from two lists are diagonal?
-    # if grid[y2] == grid[y1+1] and grid[x2] == grid[x1+1]:
-    #     if grid[y2-1][x1] != None:
-    #         return False
-    # if grid[y2] == grid[y1+1] and grid[x2] == grid[y1+1][x1-1]:
-    #     if grid[y2-1][x1] != None:
-    #         return False
-
-
-    # if grid[y1][x1-1] != None:
-    #     return False
-    # elif grid[y1][x1+1] != None:
-    #     return False
-    # elif grid[y1+1][x1] != None:
-    #     return False
-
-
-    # # test corner rule
-    # if grid[y2][x2]
-    #
-    # # tests if destination is empty
-    # if grid[y2][x2] != None:
-    #     return False
-
-
-    # tests for corner rule
-    # if grid[y1+1][x1+1] == None:
-    #     if grid[y1][x1+1] != None:
-    #         return False
-    # if grid[y1+1][x1-1] == None:
-    #     if grid[y1][x1-1] != None:
-    #         return False
-
-    # if (grid[y2][x2] == None) and (grid[y2-1][x2+1] != None):
-    #     return False
-
-    # if grid[y1+1][x1+1] == None and grid[y1][x1+1] != None:
-    #     return False
-    # if grid[y1+1][x1-1] == None and grid[y1][x1-1] != None:
-    #     return False
+    if ((x2 == x1 + 1) and (y2 == y1)) and (grid[y2][x2] != None):  # check right move
+        return False
+    if ((x2 == x1 - 1) and (y2 == y1)) and (grid[y2][x2] != None):  # check left move
+        return False
+    if ((x2 == x1 + 1) and (y2 == y1 + 1)) and (grid[y2][x2] == None) and (grid[y2 - 1][x2] != None):
+        return False
+    if ((x2 == x1 - 1) and (y2 == y1 + 1)) and (grid[y2][x2] == None) and (grid[y2 - 1][x2] != None):
+        return False
     else:
         return True
-
-
-
-
 
 
 def do_gravity(grid, x, y):
