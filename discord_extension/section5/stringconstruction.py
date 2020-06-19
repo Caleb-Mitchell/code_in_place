@@ -37,7 +37,10 @@ def only_one_first_char_keep(s):
     >>> only_one_first_char_keep('aaaaa')
     'a'
     """
-    pass
+    if s:
+        first_char = s[0]
+        s[1:].strip(strfirst_char)
+    return s
 
 
 
@@ -53,7 +56,13 @@ def make_gerund(s):
     >>> make_gerund('ing')
     'ly'
     """
-    pass
+    if s[-3:] == 'ing':
+        s.strip('ing')
+        s += 'ly'
+        return s
+    else:
+        s += 'ing'
+        return s
 
 
 

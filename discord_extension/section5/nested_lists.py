@@ -34,7 +34,7 @@ def matrix_constant_multiply(c, m):
     for y in range(len(m)):
         inner_list = []
         for x in range(len(m[y])):
-           inner_list.append(m[y][x] * 2)
+           inner_list.append(m[y][x] * c)
         new_list.append(inner_list)
     return new_list
 
@@ -49,14 +49,24 @@ def matrix_add(m1, m2):
     >>> matrix_add(m1, m2)
     [[3, 5], [7, 9], [11, 13]]
     """
-    new_list = []
-    for y in range(len(m1)):
-        inner_list = []
-        for x in range(len(m1[y])):
-            inner_list.append(m1[y][x] + m2[y][x])
-        new_list.append(inner_list)
-    return new_list
+    # new_list = []
+    # for y in range(len(m1)):
+    #     inner_list = []
+    #     for x in range(len(m1[y])):
+    #         inner_list.append(m1[y][x] + m2[y][x])
+    #     new_list.append(inner_list)
+    # return new_list
 
+    # new_list = []
+    # for y in m1:
+    #     inner_list = []
+    #     for x in m1[y]:
+    #         inner_list.append(m1[y][x] + m2[y][x])
+    #     new_list.append(inner_list)
+    # return new_list
+
+    new_matrix = [[m1[y][x] + m2[y][x] for x in range(len(m1[y]))] for y in range(len(m1))]
+    return new_matrix
 
 def make_times_table(m, n):
     """

@@ -38,8 +38,12 @@ def get_pixel_dist(pixel, red, green, blue):
     >>> get_pixel_dist(green_pixel, 5, 255, 10)
     125
     """
-    # Your code goes here
-    pass
+    red_difference = pixel.red - red
+    green_difference = pixel.green - green
+    blue_difference = pixel.blue - blue
+    dist = (red_difference ** 2 + green_difference ** 2 + blue_difference ** 2)
+
+    return dist
 
 
 def get_best_pixel(pixel1, pixel2, pixel3):
@@ -68,7 +72,18 @@ def get_best_pixel(pixel1, pixel2, pixel3):
     (255, 0, 0)
     """
     # Your code goes here
-    pass
+    average_red = (pixel1.red + pixel2.red + pixel3.red) / 3
+    average_green = (pixel1.green + pixel2.green + pixel3.green) / 3
+    average_blue = (pixel1.blue + pixel2.blue + pixel3.blue) / 3
+    pixel1_dist = get_pixel_dist(pixel1, average_red, average_green, average_blue)
+    pixel2_dist = get_pixel_dist(pixel2, average_red, average_green, average_blue)
+    pixel3_dist = get_pixel_dist(pixel3, average_red, average_green, average_blue)
+    if pixel1_dist <= (pixel2_dist and pixel3_dist):
+        return pixel1
+    if pixel2_dist <= (pixel1_dist and pixel3_dist):
+        return pixel2
+    if pixel3_dist <= (pixel1_dist and pixel3_dist):
+        return pixel3
 
 
 def create_ghost(image1, image2, image3):
@@ -83,7 +98,21 @@ def create_ghost(image1, image2, image3):
         a new Ghost solution image
     """
     # Your code goes here
-    pass
+    width = image1.width
+    height = image1.height
+
+    ghost = SimpleImage.blank(width, height)
+
+    for y in range(height):
+        for x in range(width):
+            pixel1 = image1.get_pixel(x, y)
+            pixel2 = image2.get_pixel(x, y)
+            pixel3 = image3.get_pixel(x, y)
+            best_pixel = get_best_pixel(pixel1, pixel2, pixel3)
+            ghost.set_pixel(x, y, best_pixel)
+    return ghost
+
+
 
 
 ######## DO NOT MODIFY ANY CODE BELOW THIS LINE ###########
