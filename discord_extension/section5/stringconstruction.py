@@ -38,9 +38,10 @@ def only_one_first_char_keep(s):
     'a'
     """
     if s:
-        first_char = s[0]
-        s[1:].strip(strfirst_char)
-    return s
+        s = s[0] + s.replace(s[0], '')
+        return s
+    else:
+        return s
 
 
 
@@ -56,14 +57,12 @@ def make_gerund(s):
     >>> make_gerund('ing')
     'ly'
     """
+    # if s.endswith('ing'):
     if s[-3:] == 'ing':
-        s.strip('ing')
-        s += 'ly'
-        return s
+        s = s[:-3] + 'ly'
     else:
         s += 'ing'
-        return s
-
+    return s
 
 
 def put_in_middle(outer, inner):
@@ -76,8 +75,10 @@ def put_in_middle(outer, inner):
 
     >>> put_in_middle('hit', 'obb')
     'hobbit'
-        """
-    pass
+    """
+    outer_mid = (len(outer) // 2)
+    outer = outer[:outer_mid] + inner + outer[outer_mid:]
+    return outer
 
 
 

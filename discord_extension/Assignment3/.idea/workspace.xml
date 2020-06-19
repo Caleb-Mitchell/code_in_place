@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d7b4175e-8af2-4f9e-83f1-ec69f55eaf4a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ghost.py" beforeDir="false" afterPath="$PROJECT_DIR$/ghost.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../section5/nested_lists.py" beforeDir="false" afterPath="$PROJECT_DIR$/../section5/nested_lists.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../section5/stringconstruction.py" beforeDir="false" afterPath="$PROJECT_DIR$/../section5/stringconstruction.py" afterDir="false" />
-    </list>
+    <list default="true" id="d7b4175e-8af2-4f9e-83f1-ec69f55eaf4a" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,7 +20,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Assignment3/reflection.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../section5" />
   </component>
   <component name="RunManager" selected="Python tests.Doctest get_pixel_dist">
     <configuration name="Doctest get_best_pixel" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
@@ -83,32 +77,52 @@
       <option name="presentableId" value="Default" />
       <updated>1587945102837</updated>
     </task>
+    <task id="LOCAL-00001" summary="got ghost to work">
+      <created>1592588175224</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1592588175224</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="got ghost to work" />
+    <option name="LAST_COMMIT_MESSAGE" value="got ghost to work" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="469" y="175" key="FileChooserDialogImpl" timestamp="1592587147195">
+    <state x="466" y="0" key="CommitChangelistDialog2" timestamp="1592588175161">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="469" y="175" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1592587147195" />
-    <state width="1327" height="258" key="GridCell.Tab.0.bottom" timestamp="1592587842783">
+    <state x="466" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1592588175161" />
+    <state x="469" y="175" key="FileChooserDialogImpl" timestamp="1592588194042">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1327" height="258" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1592587842783" />
+    <state x="469" y="175" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1592588194042" />
+    <state width="1327" height="258" key="GridCell.Tab.0.bottom" timestamp="1592588194955">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1327" height="258" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1592588194955" />
     <state width="1659" height="254" key="GridCell.Tab.0.bottom/0.23.1680.950@0.23.1680.950" timestamp="1587945215778" />
-    <state width="1327" height="258" key="GridCell.Tab.0.center" timestamp="1592587842782">
+    <state width="1327" height="258" key="GridCell.Tab.0.center" timestamp="1592588194954">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1327" height="258" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1592587842782" />
+    <state width="1327" height="258" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1592588194954" />
     <state width="1659" height="254" key="GridCell.Tab.0.center/0.23.1680.950@0.23.1680.950" timestamp="1587945215777" />
-    <state width="1327" height="258" key="GridCell.Tab.0.left" timestamp="1592587842781">
+    <state width="1327" height="258" key="GridCell.Tab.0.left" timestamp="1592588194953">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1327" height="258" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1592587842781" />
+    <state width="1327" height="258" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1592588194953" />
     <state width="1659" height="254" key="GridCell.Tab.0.left/0.23.1680.950@0.23.1680.950" timestamp="1587945215777" />
-    <state width="1327" height="258" key="GridCell.Tab.0.right" timestamp="1592587842782">
+    <state width="1327" height="258" key="GridCell.Tab.0.right" timestamp="1592588194954">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1327" height="258" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1592587842782" />
+    <state width="1327" height="258" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1592588194954" />
     <state width="1659" height="254" key="GridCell.Tab.0.right/0.23.1680.950@0.23.1680.950" timestamp="1587945215778" />
+    <state x="281" y="153" key="Vcs.Push.Dialog.v2" timestamp="1592588176741">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="281" y="153" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1592588176741" />
   </component>
 </project>
