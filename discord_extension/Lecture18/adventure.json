@@ -1,0 +1,33 @@
+{
+	"tresidder": {
+		"text":"You are standing at the entrance of Tressider. It is a beautiful day and students bike by on their way to class",
+		"moves": {
+			"enter":"the coho",
+			"west":"west campus",
+			"north":"the main quad"
+		}
+	},
+	"west campus" : {
+		"text":"You are in the FroSoCo qaud. A group of students sit under a tree working on their math 51 pset.",
+		"moves" : {
+			"east":"tresidder"
+		}
+	},
+	"the coho": {
+		"text":"You are in the CoHo. A jazz band plays while people sip their coffee.",
+		"moves": {
+			"exit":"tresidder"
+		}
+	},
+	"the main quad": {
+		"text":"You are standing in the main quad. One of the trees is blooming purple flowers. In the center of the quad is a tunnel enterance",
+		"moves": {
+			"south":"tresidder",
+			"tunnel":"steam tunnel"
+		}	
+	},
+	"steam tunnel": {
+		"text":"You win!",
+		"moves":[]
+	}
+}

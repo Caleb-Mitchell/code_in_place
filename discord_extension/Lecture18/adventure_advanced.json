@@ -1,0 +1,46 @@
+{
+	"tressider": {
+		"img":"tressider.jpg",
+		"text":"You are standing at the enterence of Tressider. It is a beautiful day and students bike by on their way to class",
+		"moves": {
+			"enter":"the coho",
+			"west":"west campus",
+			"quad":"the main quad"
+		}
+	},
+	"west campus" : {
+		"img":"west-campus.jpg",
+		"text":"You are in the FroSoCo qaud. A group of students sit under a tree working on their math 51 pset.",
+		"objects":[{
+			"name":"a golden key",
+			"is_pickable": true
+		}],
+		"moves" : {
+			"east":"tressider"
+		}
+	},
+	"the coho": {
+		"img":"the-coho.jpg",
+		"text":"You are in the CoHo. A jazz band plays while people sip their coffee.",
+		"moves": {
+			"exit":"tressider"
+		}
+	},
+	"the main quad": {
+		"img":"main-quad.jpg",
+		"text":"You are standing in the main quad. One of the trees is blooming purple flowers. In the center of the quad is a locked tunnel enterance",
+		"moves": {
+			"tressider":"tressider"
+		},
+		"moves_with_key": {
+			"chest": {
+				"destination":"steam tunnel",
+				"key":"a golden key"
+			}
+		}
+	},
+	"steam tunnel": {
+		"img":"steam-tunnel.jpg",
+		"text":"You win!"
+	}
+}

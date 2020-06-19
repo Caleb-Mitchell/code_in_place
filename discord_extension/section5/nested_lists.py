@@ -11,7 +11,14 @@ def enumerate(lst):
     >>> enumerate([])
     []
     """
-    pass
+    # new_lst = []
+    # for i in range(len(lst)):
+    #     new_lst.append([i])
+    #     new_lst[i].append(lst[i])
+    # return new_lst
+
+    # in list comprehension form
+    return [[i, lst[i]] for i in range(len(lst))]
 
 
 def matrix_constant_multiply(c, m):
@@ -19,11 +26,17 @@ def matrix_constant_multiply(c, m):
     Multiplies the 2-dimensional matrix m (represented as a list of lists) 
     by a constant factor c and returns the result. m should not be modified.
 
-    >>> matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+    >>> m = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
     >>> matrix_constant_multiply(2, m)
     [[2, 4, 6], [8, 10, 12], [14, 16, 18]]
     """
-    pass
+    new_list = []
+    for y in range(len(m)):
+        inner_list = []
+        for x in range(len(m[y])):
+           inner_list.append(m[y][x] * 2)
+        new_list.append(inner_list)
+    return new_list
 
 
 def matrix_add(m1, m2):
@@ -36,7 +49,13 @@ def matrix_add(m1, m2):
     >>> matrix_add(m1, m2)
     [[3, 5], [7, 9], [11, 13]]
     """
-    pass
+    new_list = []
+    for y in range(len(m1)):
+        inner_list = []
+        for x in range(len(m1[y])):
+            inner_list.append(m1[y][x] + m2[y][x])
+        new_list.append(inner_list)
+    return new_list
 
 
 def make_times_table(m, n):
@@ -49,4 +68,10 @@ def make_times_table(m, n):
     >>> make_times_table(3, 4)
     [[1, 2, 3, 4], [2, 4, 6, 8], [3, 6, 9, 12]]
     """
-    pass
+    x_list = []
+    for y in range(m):
+        inner_list = []
+        for x in range(n):
+            inner_list.append((x + 1) * (y + 1))
+        x_list.append(inner_list)
+    return x_list

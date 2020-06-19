@@ -12,7 +12,14 @@ def only_one_first_char_new(s):
     >>> only_one_first_char_new('')
     ''
     """
-    pass
+    new_str = ''
+    if s:
+        new_str += s[0]
+    for i in s[1:]:
+        if i != s[0]:
+            new_str += i
+    return new_str
+
 
 def only_one_first_char_keep(s):
     """This function removes all occurences of the first character except the first char itself and
