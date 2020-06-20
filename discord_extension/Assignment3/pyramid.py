@@ -10,6 +10,7 @@ import tkinter
 
 CANVAS_WIDTH = 600      # Width of drawing canvas in pixels
 CANVAS_HEIGHT = 300     # Height of drawing canvas in pixels
+CANVAS_MIDDLE = 300
 
 BRICK_WIDTH	= 30        # The width of each brick in pixels
 BRICK_HEIGHT = 12       # The height of each brick in pixels
@@ -21,7 +22,8 @@ def draw_brick(canvas, x, y, width, height):
     ADD YOUR COMMENT
     """
     # Your code goes here
-    pass
+    canvas.create_rectangle(x, y, width, height, outline='red')
+    return canvas
 
 
 def draw_pyramid(canvas):
@@ -29,7 +31,23 @@ def draw_pyramid(canvas):
     ADD YOUR COMMENT
     """
     # Your code goes here
-    pass
+
+    for i in range(BRICKS_IN_BASE + 1):
+        draw_brick(canvas,
+                   (CANVAS_MIDDLE + (i * BRICK_WIDTH) // 2),
+                   CANVAS_HEIGHT - BRICK_HEIGHT,
+                   (CANVAS_MIDDLE + (i * BRICK_WIDTH) // 2) + BRICK_WIDTH,
+                   CANVAS_HEIGHT)
+
+    for i in range(BRICKS_IN_BASE + 1):
+        draw_brick(canvas,
+                   (CANVAS_MIDDLE - (i * BRICK_WIDTH) // 2),
+                   CANVAS_HEIGHT - BRICK_HEIGHT,
+                   (CANVAS_MIDDLE - (i * BRICK_WIDTH) // 2) + BRICK_WIDTH,
+                   CANVAS_HEIGHT)
+    return canvas
+
+
 
 
 ######## DO NOT MODIFY ANY CODE BELOW THIS LINE ###########
@@ -63,6 +81,7 @@ def main():
     This program, when completed, displays a pyramid graphically.
     """
     canvas = make_canvas(CANVAS_WIDTH, CANVAS_HEIGHT)
+    # draw_brick(canvas, 200, 200, (200 + BRICK_WIDTH), (200 + BRICK_HEIGHT))
     draw_pyramid(canvas)
     tkinter.mainloop()
 
