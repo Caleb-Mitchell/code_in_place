@@ -21,6 +21,16 @@ def reverse(original):
     # should create and return a new dictionary where
     # the values of the original are now keys!
     reversed = {}
+    for person in original:
+        age = original[person]
+
+    reversed = {}
+    ages = list(set(original.values()))
+    for age in ages:
+        reversed.setdefault(age, [])
+        for person in original:
+            if original[person] == age:
+                reversed[age].append(person)
     return reversed
 
 
