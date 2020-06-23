@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31c8ab30-b85c-4d14-a6a3-20fdb671e717" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../WordGuess/.idea/shelf/Uncommitted_changes_before_Update_at_5_29_20,_7_21_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WordGuess/.idea/shelf/Uncommitted_changes_before_Update_at_5_29_20__7_21_PM__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WordGuess/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../WordGuess/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Mindset/.idea/Mindset.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Mindset/.idea/Mindset.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Mindset/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Mindset/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Mindset/mindset_build.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Mindset/mindset_build.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -289,6 +284,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="175" y="285" key="SettingsEditor/0.0.1920.1050/1920.0.1280.689@0.0.1920.1050" timestamp="1587548330520" />
+    <state x="459" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592861056218">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="459" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.768@0.0.1366.768" timestamp="1592861056218" />
     <state x="965" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1587850762830">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
