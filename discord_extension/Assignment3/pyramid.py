@@ -12,7 +12,7 @@ CANVAS_WIDTH = 600      # Width of drawing canvas in pixels
 CANVAS_HEIGHT = 300     # Height of drawing canvas in pixels
 CANVAS_MIDDLE = 300
 
-BRICK_WIDTH	= 30        # The width of each brick in pixels
+BRICK_WIDTH = 30        # The width of each brick in pixels
 BRICK_HEIGHT = 12       # The height of each brick in pixels
 BRICKS_IN_BASE = 14     # The number of bricks in the base
 
@@ -32,22 +32,23 @@ def draw_pyramid(canvas):
     """
     # Your code goes here
 
-    for i in range(BRICKS_IN_BASE + 1):
-        draw_brick(canvas,
-                   (CANVAS_MIDDLE + (i * BRICK_WIDTH) // 2),
-                   CANVAS_HEIGHT - BRICK_HEIGHT,
-                   (CANVAS_MIDDLE + (i * BRICK_WIDTH) // 2) + BRICK_WIDTH,
-                   CANVAS_HEIGHT)
-
-    for i in range(BRICKS_IN_BASE + 1):
-        draw_brick(canvas,
-                   (CANVAS_MIDDLE - (i * BRICK_WIDTH) // 2),
-                   CANVAS_HEIGHT - BRICK_HEIGHT,
-                   (CANVAS_MIDDLE - (i * BRICK_WIDTH) // 2) + BRICK_WIDTH,
-                   CANVAS_HEIGHT)
+    # rows from bottom to top
+    for x in range(BRICKS_IN_BASE):
+        # bricks in each row
+        for i in range(BRICKS_IN_BASE - x):
+            draw_brick(canvas,
+                       (CANVAS_MIDDLE - (((BRICKS_IN_BASE - x) * BRICK_WIDTH) / 2)) + (BRICK_WIDTH * i),
+                       CANVAS_HEIGHT - (BRICK_HEIGHT * x),
+                       CANVAS_MIDDLE - (((BRICKS_IN_BASE - x) * BRICK_WIDTH) / 2) + BRICK_WIDTH + (BRICK_WIDTH * i),
+                       CANVAS_HEIGHT - BRICK_HEIGHT - (BRICK_HEIGHT * x))
     return canvas
 
-
+# this makes a centered brick row!!
+#  draw_brick(canvas,
+#                    (CANVAS_MIDDLE - ((BRICKS_IN_BASE * BRICK_WIDTH) / 2)) + (BRICK_WIDTH * i),
+#                    CANVAS_HEIGHT,
+#                    CANVAS_MIDDLE - ((BRICKS_IN_BASE * BRICK_WIDTH) / 2) + BRICK_WIDTH + (BRICK_WIDTH * i),
+#                    CANVAS_HEIGHT - BRICK_HEIGHT)
 
 
 ######## DO NOT MODIFY ANY CODE BELOW THIS LINE ###########
@@ -81,7 +82,6 @@ def main():
     This program, when completed, displays a pyramid graphically.
     """
     canvas = make_canvas(CANVAS_WIDTH, CANVAS_HEIGHT)
-    # draw_brick(canvas, 200, 200, (200 + BRICK_WIDTH), (200 + BRICK_HEIGHT))
     draw_pyramid(canvas)
     tkinter.mainloop()
 

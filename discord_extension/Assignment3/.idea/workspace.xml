@@ -4,6 +4,7 @@
     <list default="true" id="d7b4175e-8af2-4f9e-83f1-ec69f55eaf4a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pyramid.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyramid.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lecture20/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lecture20/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +24,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lecture17" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager" selected="Python tests.Doctest get_pixel_dist">
     <configuration name="Doctest get_best_pixel" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
