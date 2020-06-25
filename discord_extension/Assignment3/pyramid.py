@@ -14,7 +14,7 @@ CANVAS_MIDDLE = 300
 
 BRICK_WIDTH = 30        # The width of each brick in pixels
 BRICK_HEIGHT = 12       # The height of each brick in pixels
-BRICKS_IN_BASE = 14     # The number of bricks in the base
+BRICKS_IN_BASE = 40     # The number of bricks in the base
 
 
 def draw_brick(canvas, x, y, width, height):
