@@ -13,8 +13,18 @@ def main():
     """
     Add your code (remember to delete the "pass" below)
     """
-    pass
+    # create empty dictionary
+    records = {}
 
+    # read from file
+    with open(INPUT_FILE) as file:
+        for line in file:
+            # strip and split
+            line = line.strip()
+            line = line.split()     # FIXME split correctly, or join together certain indexes?
+            # add correct indices to dictionary
+
+            print(line)
 
 # This provided line is required at the end of a Python file
 # to call the main() function.
