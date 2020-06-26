@@ -18,7 +18,6 @@ def expand_encoded_string(encoded):
     """
     # split every two characters into a list
     new_string = [encoded[i:i+2] for i in range(0, len(encoded), 2)]
-    # print(new_string)
 
     # loop through each string in list
     new_list = []
@@ -28,11 +27,11 @@ def expand_encoded_string(encoded):
         # multiply the char by the number
         new_letters = int(num) * letter
         new_list.append(new_letters)
-    # print(new_list)
 
     # return list to a string
     final_word = ''.join(new_list)
     return final_word
+
 
 def main():
     result = expand_encoded_string('B4')
