@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7b4175e-8af2-4f9e-83f1-ec69f55eaf4a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Assignment3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignment3/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyramid.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyramid.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lecture20/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lecture20/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +23,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Assignment5" />
   </component>
   <component name="RunManager" selected="Python tests.Doctest get_pixel_dist">
     <configuration name="Doctest get_best_pixel" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
@@ -88,22 +87,44 @@
       <option name="project" value="LOCAL" />
       <updated>1592588175224</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="pyramid works">
+      <created>1593122285278</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1593122285278</updated>
+    </task>
+    <task id="LOCAL-00003" summary="pyramid works">
+      <created>1593122320527</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1593122320527</updated>
+    </task>
+    <task id="LOCAL-00004" summary="pyramid works">
+      <created>1593122397281</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1593122397281</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="got ghost to work" />
-    <option name="LAST_COMMIT_MESSAGE" value="got ghost to work" />
+    <MESSAGE value="pyramid works" />
+    <option name="LAST_COMMIT_MESSAGE" value="pyramid works" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="466" y="0" key="CommitChangelistDialog2" timestamp="1592588175161">
+    <state x="429" y="0" key="CommitChangelistDialog2" timestamp="1593122397217">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="466" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1592588175161" />
-    <state x="469" y="175" key="FileChooserDialogImpl" timestamp="1592676843348">
+    <state x="429" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1593122397217" />
+    <state x="469" y="175" key="FileChooserDialogImpl" timestamp="1593185844296">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="469" y="175" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1592676843348" />
+    <state x="469" y="175" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1593185844296" />
     <state width="1327" height="258" key="GridCell.Tab.0.bottom" timestamp="1592588194955">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -124,10 +145,10 @@
     </state>
     <state width="1327" height="258" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1592588194954" />
     <state width="1659" height="254" key="GridCell.Tab.0.right/0.23.1680.950@0.23.1680.950" timestamp="1587945215778" />
-    <state x="281" y="153" key="Vcs.Push.Dialog.v2" timestamp="1592588176741">
+    <state x="281" y="153" key="Vcs.Push.Dialog.v2" timestamp="1593122398680">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="281" y="153" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1592588176741" />
+    <state x="281" y="153" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1593122398680" />
     <state x="344" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1592600016066">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
