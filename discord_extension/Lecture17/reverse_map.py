@@ -17,12 +17,14 @@ def main():
     for key in reversed:
         print(key, reversed[key])
 
+
 def reverse(original):
     # should create and return a new dictionary where
     # the values of the original are now keys!
-    reversed = {}
-    for person in original:
-        age = original[person]
+
+    # reversed = {}
+    # for person in original:
+    #     age = original[person]
 
     reversed = {}
     ages = list(set(original.values()))
