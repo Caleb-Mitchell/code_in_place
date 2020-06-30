@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="d06e123a-1e13-47f9-906b-6434340fc2f6" name="Default Changelist" comment="">
+    <list default="true" id="d06e123a-1e13-47f9-906b-6434340fc2f6" name="Default Changelist" comment="progress on credit_card_total.py">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/credit_card_total.py" beforeDir="false" afterPath="$PROJECT_DIR$/credit_card_total.py" afterDir="false" />
     </list>
@@ -111,12 +129,31 @@
       <option name="project" value="LOCAL" />
       <updated>1593188941544</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="progress on credit_card_total.py">
+      <created>1593542595989</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1593542595989</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="finished encoded_string.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished encoded_string.py" />
+    <MESSAGE value="progress on credit_card_total.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="progress on credit_card_total.py" />
   </component>
   <component name="WindowStateProjectService">
     <state x="383" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589531527972">
@@ -143,10 +180,11 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1118" height="207" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1280.689@0.0.1920.1050" timestamp="1589531633065" />
-    <state x="281" y="153" key="Vcs.Push.Dialog.v2" timestamp="1593188942726">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state x="316" y="164" key="Vcs.Push.Dialog.v2" timestamp="1593542597835">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="281" y="153" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1593188942726" />
+    <state x="316" y="164" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1593542597835" />
     <state x="344" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1593186300791">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

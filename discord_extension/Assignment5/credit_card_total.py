@@ -6,7 +6,7 @@ how much was spent at each store on the bill.
 """
 
 
-INPUT_FILE = 'bill1.txt'
+INPUT_FILE = 'bill2.txt'
 
 
 def main():
@@ -22,8 +22,9 @@ def main():
             # strip and split
             line = line.strip()
             line = line.split()
+
             # if index[1] does NOT end with ']', add index[2] to end of index[1]?
-            if line[1][-1] != ']':
+            while line[1][-1] != ']':
                 new_str = ''.join(line[1]) + ' ' + str(line[2])
                 line[1] = new_str
                 line.pop(2)
@@ -34,14 +35,14 @@ def main():
             line[2] = line[2].replace('$', '')
 
             # add correct indices to dictionary
-            print(line)
-            if line[1] not in records:
-                records[line[1]] = int(line[2])
+            # print(line)
             if line[1] in records:
                 records[line[1]] += int(line[2])
+            if line[1] not in records:
+                records[line[1]] = int(line[2])
 
-
-    print(records)
+    for key in records.keys():
+        print(str(key) + ': $' + str(records[key]))
 
 # This provided line is required at the end of a Python file
 # to call the main() function.
