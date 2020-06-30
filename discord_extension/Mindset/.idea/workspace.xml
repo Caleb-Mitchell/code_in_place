@@ -1,4 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="68f1a1e1-6640-40ff-b75b-eadac8659b8b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../WordGuess/.idea/shelf/Uncommitted_changes_before_Update_at_5_29_20,_7_21_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WordGuess/.idea/shelf/Uncommitted_changes_before_Update_at_5_29_20__7_21_PM__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WordGuess/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../WordGuess/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Mindset.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Mindset.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mindset_build.py" beforeDir="false" afterPath="$PROJECT_DIR$/mindset_build.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="ProjectId" id="1c5v3mzN53uivHw44Czou2Gl1Go" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Section6" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="68f1a1e1-6640-40ff-b75b-eadac8659b8b" name="Default Changelist" comment="" />
+      <created>1592681038136</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1592681038136</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="469" y="175" key="FileChooserDialogImpl" timestamp="1592762818470">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="469" y="175" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1592762818470" />
+    <state x="411" y="330" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1592681332526">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="411" y="330" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1366.768@0.0.1366.768" timestamp="1592681332526" />
+  </component>
 </project>
