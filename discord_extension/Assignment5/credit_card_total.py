@@ -6,7 +6,7 @@ how much was spent at each store on the bill.
 """
 
 
-INPUT_FILE = 'bill2.txt'
+INPUT_FILE = 'bill1.txt'
 
 
 def main():
