@@ -1,0 +1,65 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"d06e123a-1e13-47f9-906b-6434340fc2f6\" name=\"Default Changelist\" comment=\"\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/credit_card_total.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/credit_card_total.py\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$/../..\" />\n  </component>\n  <component name=\"ProjectId\" id=\"1bhmsYJEaFjUONNOlw8PpzFMmly\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"RunManager\" selected=\"Python tests.Doctest expand_encoded_string\">\n    <configuration name=\"Doctest expand_encoded_string\" type=\"tests\" factoryName=\"Doctests\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"Assignment5\" />\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\n      <option name=\"PARENT_ENVS\" value=\"true\" />\n      <option name=\"SDK_HOME\" value=\"\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$\" />\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/encoded_string.py\" />\n      <option name=\"CLASS_NAME\" value=\"\" />\n      <option name=\"METHOD_NAME\" value=\"expand_encoded_string\" />\n      <option name=\"FOLDER_NAME\" value=\"\" />\n      <option name=\"TEST_TYPE\" value=\"TEST_FUNCTION\" />\n      <option name=\"PATTERN\" value=\"\" />\n      <option name=\"USE_PATTERN\" value=\"false\" />\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"Doctest get_amount\" type=\"tests\" factoryName=\"Doctests\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"Assignment5\" />\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\n      <option name=\"PARENT_ENVS\" value=\"true\" />\n      <option name=\"SDK_HOME\" value=\"\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$\" />\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/credit_card_total.py\" />\n      <option name=\"CLASS_NAME\" value=\"\" />\n      <option name=\"METHOD_NAME\" value=\"get_amount\" />\n      <option name=\"FOLDER_NAME\" value=\"\" />\n      <option name=\"TEST_TYPE\" value=\"TEST_FUNCTION\" />\n      <option name=\"PATTERN\" value=\"\" />\n      <option name=\"USE_PATTERN\" value=\"false\" />\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"Doctest get_store_name\" type=\"tests\" factoryName=\"Doctests\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"Assignment5\" />\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\n      <option name=\"PARENT_ENVS\" value=\"true\" />\n      <option name=\"SDK_HOME\" value=\"\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$\" />\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/credit_card_total.py\" />\n      <option name=\"CLASS_NAME\" value=\"\" />\n      <option name=\"METHOD_NAME\" value=\"get_store_name\" />\n      <option name=\"FOLDER_NAME\" value=\"\" />\n      <option name=\"TEST_TYPE\" value=\"TEST_FUNCTION\" />\n      <option name=\"PATTERN\" value=\"\" />\n      <option name=\"USE_PATTERN\" value=\"false\" />\n      <method v=\"2\" />\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Python tests.Doctest expand_encoded_string\" />\n        <item itemvalue=\"Python tests.Doctest get_amount\" />\n        <item itemvalue=\"Python tests.Doctest get_store_name\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SvnConfiguration\">\n    <configuration />\n  </component>\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"d06e123a-1e13-47f9-906b-6434340fc2f6\" name=\"Default Changelist\" comment=\"\" />\n      <created>1589092906596</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1589092906596</updated>\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"finished encoded_string.py\">\n      <created>1593188907521</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1593188907521</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"finished encoded_string.py\">\n      <created>1593188941544</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1593188941544</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"3\" />\n    <servers />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"finished encoded_string.py\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"finished encoded_string.py\" />\n  </component>\n  <component name=\"WindowStateProjectService\">\n    <state x=\"383\" y=\"91\" key=\"#com.intellij.execution.impl.EditConfigurationsDialog\" timestamp=\"1589531527972\">\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1050\" />\n    </state>\n    <state x=\"383\" y=\"91\" key=\"#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050/1920.0.1280.689@0.0.1920.1050\" timestamp=\"1589531527972\" />\n    <state x=\"420\" y=\"0\" key=\"CommitChangelistDialog2\" timestamp=\"1593188941465\">\n      <screen x=\"0\" y=\"0\" width=\"1366\" height=\"768\" />\n    </state>\n    <state x=\"420\" y=\"0\" key=\"CommitChangelistDialog2/0.0.1366.768@0.0.1366.768\" timestamp=\"1593188941465\" />\n    <state width=\"1118\" height=\"207\" key=\"GridCell.Tab.0.bottom\" timestamp=\"1589531633065\">\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1050\" />\n    </state>\n    <state width=\"1118\" height=\"207\" key=\"GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1280.689@0.0.1920.1050\" timestamp=\"1589531633065\" />\n    <state width=\"1118\" height=\"207\" key=\"GridCell.Tab.0.center\" timestamp=\"1589531633065\">\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1050\" />\n    </state>\n    <state width=\"1118\" height=\"207\" key=\"GridCell.Tab.0.center/0.0.1920.1050/1920.0.1280.689@0.0.1920.1050\" timestamp=\"1589531633065\" />\n    <state width=\"1118\" height=\"207\" key=\"GridCell.Tab.0.left\" timestamp=\"1589531633065\">\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1050\" />\n    </state>\n    <state width=\"1118\" height=\"207\" key=\"GridCell.Tab.0.left/0.0.1920.1050/1920.0.1280.689@0.0.1920.1050\" timestamp=\"1589531633065\" />\n    <state width=\"1118\" height=\"207\" key=\"GridCell.Tab.0.right\" timestamp=\"1589531633065\">\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1050\" />\n    </state>\n    <state width=\"1118\" height=\"207\" key=\"GridCell.Tab.0.right/0.0.1920.1050/1920.0.1280.689@0.0.1920.1050\" timestamp=\"1589531633065\" />\n    <state x=\"281\" y=\"153\" key=\"Vcs.Push.Dialog.v2\" timestamp=\"1593188942726\">\n      <screen x=\"0\" y=\"0\" width=\"1366\" height=\"768\" />\n    </state>\n    <state x=\"281\" y=\"153\" key=\"Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768\" timestamp=\"1593188942726\" />\n    <state x=\"344\" y=\"89\" width=\"672\" height=\"678\" key=\"search.everywhere.popup\" timestamp=\"1593186300791\">\n      <screen x=\"0\" y=\"0\" width=\"1366\" height=\"768\" />\n    </state>\n    <state x=\"344\" y=\"89\" width=\"672\" height=\"678\" key=\"search.everywhere.popup/0.0.1366.768@0.0.1366.768\" timestamp=\"1593186300791\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision 03cc73c04afbd57ab961d3fa1507a82d89236e8e)
++++ .idea/workspace.xml	(date 1593791437927)
+@@ -3,7 +3,6 @@
+   <component name="ChangeListManager">
+     <list default="true" id="d06e123a-1e13-47f9-906b-6434340fc2f6" name="Default Changelist" comment="">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/credit_card_total.py" beforeDir="false" afterPath="$PROJECT_DIR$/credit_card_total.py" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -111,22 +110,30 @@
+       <option name="project" value="LOCAL" />
+       <updated>1593188941544</updated>
+     </task>
+-    <option name="localTasksCounter" value="3" />
++    <task id="LOCAL-00003" summary="update">
++      <created>1593208117462</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1593208117462</updated>
++    </task>
++    <option name="localTasksCounter" value="4" />
+     <servers />
+   </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="finished encoded_string.py" />
+-    <option name="LAST_COMMIT_MESSAGE" value="finished encoded_string.py" />
++    <MESSAGE value="update" />
++    <option name="LAST_COMMIT_MESSAGE" value="update" />
+   </component>
+   <component name="WindowStateProjectService">
+     <state x="383" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589531527972">
+       <screen x="0" y="0" width="1920" height="1050" />
+     </state>
+     <state x="383" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050/1920.0.1280.689@0.0.1920.1050" timestamp="1589531527972" />
+-    <state x="420" y="0" key="CommitChangelistDialog2" timestamp="1593188941465">
++    <state x="420" y="0" key="CommitChangelistDialog2" timestamp="1593208117381">
+       <screen x="0" y="0" width="1366" height="768" />
+     </state>
+-    <state x="420" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1593188941465" />
++    <state x="420" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1593208117381" />
+     <state width="1118" height="207" key="GridCell.Tab.0.bottom" timestamp="1589531633065">
+       <screen x="0" y="0" width="1920" height="1050" />
+     </state>
+@@ -143,10 +150,10 @@
+       <screen x="0" y="0" width="1920" height="1050" />
+     </state>
+     <state width="1118" height="207" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1280.689@0.0.1920.1050" timestamp="1589531633065" />
+-    <state x="281" y="153" key="Vcs.Push.Dialog.v2" timestamp="1593188942726">
++    <state x="281" y="153" key="Vcs.Push.Dialog.v2" timestamp="1593208119927">
+       <screen x="0" y="0" width="1366" height="768" />
+     </state>
+-    <state x="281" y="153" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1593188942726" />
++    <state x="281" y="153" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1593208119927" />
+     <state x="344" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1593186300791">
+       <screen x="0" y="0" width="1366" height="768" />
+     </state>
