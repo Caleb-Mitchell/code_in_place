@@ -34,7 +34,7 @@ def load_data(filename):
             city_str = city_str.strip()
 
             # Make list out of line
-            line = line.strip()
+            line = line.strip() 
             line = line.split(',')
 
             # Remove city name from list
